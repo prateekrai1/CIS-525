@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-weight: 300;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 70%;
+  background-color: #5e8eba;
+  height: 100%;
+  color: white;
+  font-size: 2.5rem;
+}
+.container h1{
+  position: relative;
+}
+.container span{
+  color: #ffcf09;
+}
+.container h1 img{
+  position: absolute;
+  right: 0;
+  bottom: -60px;
+}
+
+form{
+  width: 100%;
+}
+.loginform{
+  display: flex;
+  place-items: center;
+  height: 100%;
+  flex-basis: 30%;
+  padding: 35px;
+}
+label{
+  display: block;
+}
+.userInput{
+  margin-bottom: 15px;
+}
+.userInput:first-of-type{
+  margin-top: 20px;
+}
+input{
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 0.6px solid;
+
+}
+
+input:focus,
+input:active{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background-color: transparent;
+}
+input[type='password']{
+  width: 100%;
+
+}
+#small-font{
+  font-size: small;
+}
+button[type="submit"]{
+  border: none;
+  padding: 8px 25px;
+  background-color: #5e8eba;
+  color: white;
+  cursor: pointer;
+}
+#n-reg{
+  display: inline-block;
+}
+.errorMessage{
+  color: red;
+  font-size: smaller;
+}
